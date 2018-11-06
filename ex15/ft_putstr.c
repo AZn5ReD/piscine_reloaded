@@ -1,17 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_div_mod.c                                       :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jchirk <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/05 17:20:12 by jchirk            #+#    #+#             */
-/*   Updated: 2018/11/06 11:06:08 by jchirk           ###   ########.fr       */
+/*   Created: 2018/11/06 15:45:01 by jchirk            #+#    #+#             */
+/*   Updated: 2018/11/06 15:47:55 by jchirk           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_div_mod(int a, int b, int *div, int *mod)
+void	ft_putchar(char c);
+
+void	ft_putstr(char *str)
 {
-	*div = a / b;
-	*mod = a % b;
+	while(*str != 0)
+	{
+		ft_putchar(*str);
+		str++;
+	}
 }
