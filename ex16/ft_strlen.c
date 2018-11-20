@@ -6,7 +6,7 @@
 /*   By: jchirk <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/06 15:48:46 by jchirk            #+#    #+#             */
-/*   Updated: 2018/11/06 15:51:14 by jchirk           ###   ########.fr       */
+/*   Updated: 2018/11/20 14:34:55 by jchirk           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@ int	ft_strlen(char *str)
 	int i;
 
 	i = 0;
-	while(*str != 0)
+	while (*str)
 	{
 		str++;
 		i++;
 	}
-	return i;
+	return (i);
 }
